@@ -20,7 +20,7 @@ Simply click the deploy button:
 
 Follow the steps below to set this up via the [`netlify-cli`](https://cli.netlify.com/)
 
-1. Fork this repo
+1. **Fork this repo**
 
     Fork this repo and clone it down to your local machine
 
@@ -28,7 +28,7 @@ Follow the steps below to set this up via the [`netlify-cli`](https://cli.netlif
     git clone repoURL
     ```
 
-2. Create this site in Netlify
+2. **Create this site in Netlify**
 
     Open your terminal and run the following command:
 
@@ -38,7 +38,7 @@ Follow the steps below to set this up via the [`netlify-cli`](https://cli.netlif
 
     Choose "create & configure a new site", then add a site name or hit enter for one to be generated for you.
 
-3. Install our graphQL dependencies
+3. **Install our graphQL dependencies**
 
     Change directories into our functions folder and create new package.json
 
@@ -52,15 +52,25 @@ Follow the steps below to set this up via the [`netlify-cli`](https://cli.netlif
     npm install apollo-server-lambda
     ```
 
-4. In `functions/graphql.js`, require 'apollo-server-lambda'
+4. **Require the graphQL dependencies in your function**
 
-5. In `functions/graphql.js`, define your graphQL types
+    In `functions/graphql.js`, require 'apollo-server-lambda'
 
-6. In `functions/graphql.js`, define your graphQL resolvers
+5. **Define your GraphQL types**
 
-7. In `functions/graphql.js`, create a new `ApolloServer` and pass it your typeDefs and resolves
+    In `functions/graphql.js`, define your graphQL types
 
-8. In `functions/graphql.js`, turn your server into a lambda compatible function signature
+6. **Define your GraphQL resolvers**
+
+    In `functions/graphql.js`, define your graphQL resolvers
+
+7. **Create a new `ApolloServer`**
+
+    In `functions/graphql.js`, create a new `ApolloServer` and pass it your typeDefs and resolves
+
+8. **Export the Lambda compatible ApolloServer**
+
+    In `functions/graphql.js`, turn your server into a lambda compatible function signature
 
     ```js
     server.createHandler()
@@ -68,7 +78,7 @@ Follow the steps below to set this up via the [`netlify-cli`](https://cli.netlif
 
     Then export the handler
 
-9. Deploy the site
+9. **Deploy the site**
 
     Open your terminal and run the following command:
 
@@ -82,7 +92,7 @@ Follow the steps below to set this up via the [`netlify-cli`](https://cli.netlif
     netlify open:site
     ```
 
-10. You did it! 🎉
+10. **You did it! 🎉**
 
     You should see a site like [https://graphql-functions.netlify.com/](https://graphql-functions.netlify.com/) where you can explore your graphQL schema.
 
