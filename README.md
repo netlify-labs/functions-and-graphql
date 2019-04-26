@@ -2,6 +2,10 @@
 
 This repo demonstrates how to use functions for a GraphQL API using `apollo-server-lambda`.
 
+See the graphQL [function code](./functions/graphql.js)
+
+For more information on functions. Checkout [functions.netlify.com](https://functions.netlify.com/) and the [Netlify functions workshop](https://github.com/DavidWells/netlify-functions-workshop#workshop-lessons)
+
 ## Setup & Deployment
 
 ### Easy mode:
