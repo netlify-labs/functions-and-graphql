@@ -1,18 +1,20 @@
 # Netlify Functions + GraphQL
 
 This repo demonstrates how to use functions for a GraphQL API using `apollo-server-lambda`.
-x
+
 ## Setup & Deployment
 
-**Easy mode:**
+### Easy mode:
 
-Click the deploy button:
+Simply click the deploy button:
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-labs/functions-and-graphql">
   <img src="https://www.netlify.com/img/deploy/button.svg">
 </a>
 
-**Manual mode:**
+### Manual mode:
+
+Follow the steps below to set this up via the [`netlify-cli`](https://cli.netlify.com/)
 
 1. Fork this repo
 
