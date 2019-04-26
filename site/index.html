@@ -11,15 +11,45 @@
       height: 100vh;
       margin: 0;
       overflow: hidden;
+      font-family: system, -apple-system, "San Francisco", ".SFNSDisplay-Regular", "Segoe UI", Segoe, "Segoe WP", "Helvetica Neue", helvetica, "Lucida Grande", arial, sans-serif;
     }
     #splash {
       color: #333;
       display: flex;
       flex-direction: column;
-      font-family: system, -apple-system, "San Francisco", ".SFNSDisplay-Regular", "Segoe UI", Segoe, "Segoe WP", "Helvetica Neue", helvetica, "Lucida Grande", arial, sans-serif;
       height: 100vh;
       justify-content: center;
       text-align: center;
+    }
+    .view-src-wrapper {
+      position: absolute;
+      right: 40px;
+      top: 70px;
+      background: #00000099;
+      border-radius: 6px;
+      color: white;
+      padding: 15px 22px;
+      font-size: 19px;
+      z-index: 999999;
+    }
+    .deploy-button {
+      width: 200px;
+    }
+    .view-src a {
+      text-decoration: none;
+      color: #fff;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .github-icon {
+      width: 30px;
+      fill: #fff;
+      margin-right: 15px;
     }
   </style>
   <link rel="icon" href="favicon.ico">
@@ -102,5 +132,17 @@
         document.body,
       )
   </script>
+
+  <div class='view-src-wrapper'>
+    <div class="view-src">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/netlify-labs/functions-and-graphql/blob/master/functions/graphql.js">
+        <img class="github-icon" src="/github.svg" alt="view repo on github">
+        View the source
+      </a>
+    </div>
+    <a target="_blank" rel="noopener noreferrer" href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-labs/functions-and-graphql">
+      <img src="/deploy.svg" class="deploy-button" alt="deploy to netlify">
+    </a>
+  </div>
 </body>
 </html>
