@@ -1,0 +1,20 @@
+{
+  "name": "graphql-example",
+  "version": "1.0.0",
+  "description": "This repo demonstrates how to use functions for a GraphQL API using `apollo-server-lambda`.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd functions && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netlify-labs/functions-and-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netlify-labs/functions-and-graphql/issues"
+  },
+  "homepage": "https://github.com/netlify-labs/functions-and-graphql#readme"
+}
