@@ -9,7 +9,7 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     hello: (root, args, context) => {
-      return `I'm running in a Netlify function. https://bit.ly/2UXh0fD`
+      return `Hello from Netlify function. https://bit.ly/2UXh0fD`
     }
   }
 }
